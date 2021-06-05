@@ -1,0 +1,18 @@
+.codingmountainuserright{
+    padding: 10px;
+    margin: 10px;
+}
+
+.initialuserdetailpage{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.carouselimage{
+    height: 370px;
+}
+
+.carousel .slide .legend{
+    opacity: 1 !important;
+}

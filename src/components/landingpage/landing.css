@@ -1,0 +1,17 @@
+/* coding mountion asssignment css goes here for Landing page */
+button{
+    text-align: center;
+    display: block;
+    padding: 10px 20px;
+}
+.container.userlist{
+    padding: 10px;
+    margin: 50px 0px 40px 93px;
+}
+
+.container.userlist h3{
+    margin: 20px;
+    font-size: 30px;
+    color:rgb(85, 85, 224);
+    text-decoration: underline;
+}

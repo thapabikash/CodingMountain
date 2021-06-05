@@ -1,0 +1,13 @@
+.userprofilepage{
+    margin: 70px 0px 0px 0px;
+}
+.userprofilepage h3{
+    text-decoration: underline;
+
+}
+
+.userprofilepage .alert-primary{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}

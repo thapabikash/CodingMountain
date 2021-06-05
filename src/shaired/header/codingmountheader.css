@@ -1,0 +1,25 @@
+.codingmountheader {
+    background: #f7f4f4;
+    box-shadow: 1px 1px #e2e2e2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.is-active{
+    background: #2196f3;
+    padding: 8px;
+    color: #fffefe;
+}
+.codingmountheader .navbar-right{
+    display: flex;
+    flex-direction: row;
+    column-gap: 33px;
+}
+
+.codingmountheader ul{
+    display: flex;
+    column-gap: 100px;
+    flex-direction: row;
+}

@@ -1,0 +1,21 @@
+.codingmountainuserleft{
+    padding: 10px;
+    margin: auto;
+}
+
+.userlist.card img{
+    width: 95%;
+    border-radius: 50%;
+}
+.userlist.card{
+    margin: 6px;
+    padding: 11px;
+    text-align: center;
+ 
+}
+
+.userlist.card button{
+    padding: 3px 2px;
+    margin: 2px;
+    font-size: 12px;
+}
