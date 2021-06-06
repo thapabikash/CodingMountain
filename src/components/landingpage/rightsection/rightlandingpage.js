@@ -15,6 +15,7 @@ import { Carousel } from 'react-responsive-carousel';
    */
 
   const newuser=props.user;
+  const childprops=props.children;
   const userFullname=`${newuser.firstName} ${newuser.lastName===undefined?"":newuser.lastName}`;
 
   const  Initialize_detail_section=()=> {
@@ -43,7 +44,7 @@ import { Carousel } from 'react-responsive-carousel';
           <div className="card-body">
             <h5 className="card-title"> {newuser.firstName}</h5>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           <Link to={'/detail/'+newuser.firstName}>View Detail</Link>
+           <Link to={'/detail/'+newuser.firstName}>View Detail - {childprops}</Link>
           </div>
         </div>
         </>

@@ -34,8 +34,8 @@ function Leftlandingpage(props) {
   }, [users]);
 
 
-  let userprofile=user=>{
-    props.userprofile(user)
+  let emit_Userprofile=user=>{
+    props.emit_Userprofile(user)
  }
 
   return (
@@ -46,7 +46,7 @@ function Leftlandingpage(props) {
                   </button>
             </h3>
               <ul>
-                   {users.map((user,index)=> <User_list_Class_render   users={user} id={index} key={index} userprofile={userprofile}/>)}
+                   {users.map((user,index)=> <User_list_Class_render   users={user} id={index} key={index} emit_Userprofile={emit_Userprofile}/>)}
               </ul>
       </div>
   );

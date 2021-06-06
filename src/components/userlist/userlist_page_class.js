@@ -11,14 +11,16 @@ class  User_list_Class_render extends React.Component{
         this.name=`${props.users.firstName} ${props.users.lastName===undefined?"":props.users.lastName}`;
         this.Priority_rank=["google", "linkedin", "facebook", "twitter", "office365", undefined];
         this.filtered_high_priority_image();
-        this.userProfile=this.userProfile.bind(this);
+        this.emit_Userprofile=this.emit_Userprofile.bind(this);
     }
 
     /**
-     * @name {string} name
+     * @param {string} name
      * @Priority_rank -["google", "linkedin", "facebook", "twitter", "office365", undefined] 
      * @param {Object} props -{users:{},id}
-     * @param {Array} high_priority_images-[{source,url}]
+     * @param {Array} high_priority_images -[{source,url}]
+     * @param {Array} new_coding_Photos
+     * @function emit_Userprofile
      * @function  filtered_high_priority_image -filter image and placed with ordering acc to @Priority_rank
      */
 
@@ -39,8 +41,9 @@ class  User_list_Class_render extends React.Component{
     this.high_priority_images=[...new Set(new_coding_Photos)]
 }
 
-userProfile=()=>{
-        this.props.userprofile(this.props.users)
+emit_Userprofile=(event,emit_user)=>{
+        event.preventDefault();
+        this.props.emit_Userprofile(emit_user)
 }
 
 render(){
@@ -54,7 +57,7 @@ render(){
                              {this.name}
                        </div>
                        <div className="col-md-5">
-                             <button type="button" className="btn btn-primary" onClick={this.userProfile}>More..</button>
+                             <button type="button" className="btn btn-primary" onClick={(event)=>this.emit_Userprofile(event,this.props.users)}>More..</button>
                              <button type="button" className="btn btn-light">
                                  {/* navigate with firstname */}
                              <Link to={'/detail/'+this.props.users.firstName}>open with routing..</Link></button>

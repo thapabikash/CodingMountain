@@ -22,7 +22,7 @@ function Landingpage() {
    * @param {Object} user 
    */
   
-  let userprofile=(user)=>{
+  let emit_Userprofile=(user)=>{
      setuser(user)
   }
 
@@ -32,12 +32,12 @@ function Landingpage() {
           <div className="text-center"><h3 style={inline_css_header}>Hellow from coding mountain</h3></div>
                 <div className="row">
                       <div className="col-md-6" >
-                           <Leftlandingpage  userprofile={userprofile}/>
+                           <Leftlandingpage  emit_Userprofile={emit_Userprofile}/>
                       </div>
                       <div className="col-md-6" >
-                            <Rightlandingpage user={user}/>
+                            <Rightlandingpage user={user}>Right Landing Page</Rightlandingpage>
                       </div>
-           </div>
+                </div>
      </section> 
    </UserProfileProvider>
   );
